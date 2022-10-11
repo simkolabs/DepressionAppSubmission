@@ -1,0 +1,111 @@
+.postsMainBody{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    padding-top: 00px;
+    padding-left: 0px;
+    height: 100%;
+}
+.postsTitle{
+    background-color: #10ac84;
+    height: 50px;
+    border-bottom-right-radius: 800px;
+    padding: 10px;
+}
+.postsTitleText{
+    color: white;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.facebookLoginButton{
+    background-color: #be2edd;
+    border-style: none;
+    border-radius: 30px;
+    width: 200px;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+}
+.postsDisplayContainer{
+    margin-top: 30px;
+    border-top: 5px solid #c8d6e5;
+    width: 100%;
+}
+.resultsTitle{
+    color:#10ac84;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.singlePostElement{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.postTitle{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #576574;
+}
+
+.post{
+    margin-left: 30px;
+    font-size: 15px;
+    color: #576574;
+}
+.result{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    color: #01a3a4;
+}
+.socialButtonContainer{
+    position: absolute;
+    bottom: 0px;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    grid-template-columns: 10% 35% 10% 35% 10%;
+}
+.homeButton{
+    width:100%;
+    padding-bottom: 10px;
+    padding:1px;
+    border: 2px solid #01a3a4;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+}
+.homeButton:hover{
+    background-color: red;
+    border: 2px solid white;
+}
+.homeButtonText{
+    color: #8395a7;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bolder;
+}
+.postsSaveButton{
+    width:100%;
+    padding:5px;
+    background-color: #01a3a4;
+    cursor: pointer;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+.postsSaveButton:hover{
+    background-color: #44bd32;
+}
+.postsSaveButtonText{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+
+    font-weight: bolder;
+}

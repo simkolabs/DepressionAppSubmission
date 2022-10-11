@@ -1,0 +1,86 @@
+.testDiaryMainContainer{
+    position: absolute;
+    top:0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+}
+.sessionAnswersHistoryContainer{
+    margin: 20px;
+    padding: 20px;
+}
+.facebookHistoryContainer{
+    margin: 20px;
+    padding: 20px;
+}
+.historyTitle{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    color: #006266;
+}
+.historyTable{
+    width: 100%;
+}
+.headerRow{
+    background-color: #576574;
+    color: white;
+    margin-bottom: 10px;
+}
+.headerElement{
+    font-size: 20px;
+    width: 30%;
+    color: white;
+}
+.dataRow{
+    background-color: #1dd1a1;
+    margin-bottom: 5px;
+}
+.dataElement{
+    width: 30%;
+    text-align: center;
+    border-bottom: 2px solid #c8d6e5;
+    border-radius: 30px;
+    padding: 5px;
+    color: white;
+}
+
+.historyTable2{
+    width: 100%;
+}
+.headerRow2{
+    background-color: #576574;
+    color: white;
+    margin-bottom: 10px;
+}
+.headerElement2{
+    font-size: 20px;
+    width: 80%;
+    color: white;
+}
+.headerElement3{
+    font-size: 20px;
+    width: 20%;
+    color: white;
+}
+.dataRow2{
+    margin-bottom: 5px;
+}
+.dataElement2{
+    width: 80%;
+    text-align: center;
+    border-bottom: 2px solid #c8d6e5;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #006266;
+    color: white;
+}
+.dataElement3{
+    width: 20%;
+    text-align: center;
+    border-bottom: 2px solid #c8d6e5;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #EA2027;
+    color: white;
+}
