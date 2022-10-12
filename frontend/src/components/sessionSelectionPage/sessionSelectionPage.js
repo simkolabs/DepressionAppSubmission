@@ -8,9 +8,9 @@ const axios = require('axios').default;
 class SessionSelectionPage extends Component {
     constructor(props) {
         super(props);
-        const session = localStorage.getItem("SelectedSession");
-        const sessionParsed = JSON.parse(session);
-        const sessionDetails = sessionParsed.Session
+        // const session = localStorage.getItem("SelectedSession");
+        // const sessionParsed = JSON.parse(session);
+        // const sessionDetails = sessionParsed.Session
         const user = localStorage.getItem("user");
         const userParsed = JSON.parse(user);
         this.state = {

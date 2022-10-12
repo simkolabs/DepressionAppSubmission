@@ -28,7 +28,7 @@ class SocialMediaPage extends Component {
             id:response.id
         },()=>{
             let posts = [];
-            axios.get("https://graph.facebook.com/v14.0/"+this.state.id+"/posts?access_token="+this.state.accessToken)
+            axios.get("https://graph.facebook.com/v15.0/"+this.state.id+"/posts?access_token="+this.state.accessToken)
                 .then(async res => {
                     for (let i = 0; i < res.data.data.length; i++) {
                         let element = res.data.data[i]
@@ -84,10 +84,10 @@ class SocialMediaPage extends Component {
             return (
                 <div className="postsMainBody">
                     <div className="postsTitle">
-                        <p className="postsTitleText">FACEBOOK DEPRESSION ANALYSIS</p>
+                        <p className="postsTitleText">DEPRESSION ANALYSIS OF FACEBOOK POST</p>
                         <br/>
                         <FacebookLogin
-                            appId="1204488110327168"
+                            appId="973684093550524"
                             autoLoad={true}
                             fields="name,email,picture"
                             onClick={this.componentClicked}

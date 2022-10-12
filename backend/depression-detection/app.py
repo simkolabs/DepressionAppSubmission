@@ -5,6 +5,7 @@ from src.utils_1 import VideoModel as vm
 from os import listdir
 from os.path import isfile, join
 from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
 
 origins = ["*"]
 app = FastAPI()
@@ -52,3 +53,7 @@ async def predict_vido_path():
     #     responses[path]="Video Format is not support"
     print(responses)
     return responses
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
