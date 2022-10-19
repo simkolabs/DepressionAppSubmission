@@ -43,7 +43,8 @@ class SocialMediaPage extends Component {
                                     },
                                     headers: {
                                         'accept': 'application/json',
-                                        'content-type': 'application/x-www-form-urlencoded'
+                                        'content-type': 'application/x-www-form-urlencoded',
+                                        'Access-Control-Allow-Origin': '*'
                                     }
                                 }
                             );
@@ -87,7 +88,7 @@ class SocialMediaPage extends Component {
                         <p className="postsTitleText">DEPRESSION ANALYSIS OF FACEBOOK POST</p>
                         <br/>
                         <FacebookLogin
-                            appId="973684093550524"
+                            appId="512973630681659"
                             autoLoad={true}
                             fields="name,email,picture"
                             onClick={this.componentClicked}
