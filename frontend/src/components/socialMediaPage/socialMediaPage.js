@@ -87,14 +87,7 @@ class SocialMediaPage extends Component {
                     <div className="postsTitle">
                         <p className="postsTitleText">DEPRESSION ANALYSIS OF FACEBOOK POST</p>
                         <br/>
-                        <FacebookLogin
-                            appId="512973630681659"
-                            autoLoad={true}
-                            fields="name,email,picture"
-                            onClick={this.componentClicked}
-                            callback={this.responseFacebook}
-                            className="facebookLoginButton"
-                        />
+
                     </div>
 
                     <div className="postsDisplayContainer">'
@@ -103,11 +96,18 @@ class SocialMediaPage extends Component {
                             <h5 className="postTitle">Result</h5>
                         </div>
                         {
+
                             this.state.posts.map(post=>{
+                                let result = ""
+                                if(post.result==="Depressive"){
+                                    result = "Depressive"
+                                }else{
+                                    result= "Non Depressive"
+                                }
                                 return(
                                     <div className="singlePostElement">
                                         <h5 className="post">{post.post}</h5>
-                                        <h5 className="result">{post.result}</h5>
+                                        <h5 className="result">{result}</h5>
                                     </div>
                                 );
                             })
@@ -123,12 +123,14 @@ class SocialMediaPage extends Component {
                             <p className="homeButtonText">Home</p>
                         </div>
                         <div></div>
-                        {/*<div className="postsSaveButton"  onClick={(e)=> {*/}
-                        {/*    e.preventDefault()*/}
-                        {/*    this.setState({reDirectToHome: true})*/}
-                        {/*}}>*/}
-                        {/*    <p className="postsSaveButtonText">Save Results</p>*/}
-                        {/*</div>*/}
+                        <FacebookLogin
+                            appId="735493277533052"
+                            autoLoad={true}
+                            fields="name,email,picture"
+                            onClick={this.componentClicked}
+                            callback={this.responseFacebook}
+                            className="facebookLoginButton"
+                        />
                         <div></div>
                     </div>
                 </div>

@@ -108,6 +108,20 @@ class SessionPage extends Component {
                 </div>
             )
         } else if(this.state.reDirectToResults){
+            let result = ""
+            if(this.state.videoResult.VideoResult==="Depressed"&&
+                this.state.videoResult.AudioResult==="Depressive"){
+                result = "High"
+            }else if((this.state.videoResult.VideoResult==="Positive"&&
+                this.state.videoResult.AudioResult==="Depressive")||
+                (this.state.videoResult.VideoResult==="Depressed"&&
+                this.state.videoResult.AudioResult==="Positive")
+            ){
+                result = "Medium"
+            }else if(this.state.videoResult.VideoResult==="Positive"&&
+                this.state.videoResult.AudioResult==="Positive"){
+                result = "Low"
+            }
             return(
                 <div className="resultsContainer">
                     <div className="resultsHeaderContainer">
@@ -116,15 +130,7 @@ class SessionPage extends Component {
                     <div className="detailsContainer">
                         <div className="detailsSubContainer1">
                             <h5 className="detailsHeader">Video Result</h5>
-                            <h6 className="details">{this.state.videoResult.VideoResult}</h6>
-                        </div>
-                        <div className="detailsSubContainer2">
-                            <h5 className="detailsHeader">Audio Result </h5>
-                            <h6 className="details">{this.state.videoResult.AudioResult}</h6>
-                        </div>
-                        <div className="detailsSubContainer3">
-                            <h5 className="detailsHeader">Depression Level </h5>
-                            <h6 className="details">{this.state.videoResult.DepressionLevel} %</h6>
+                            <h6 className="details">You have {result} level depression. </h6>
                         </div>
                     </div>
                     <div className="session_results_go_home" onClick={(e)=>{

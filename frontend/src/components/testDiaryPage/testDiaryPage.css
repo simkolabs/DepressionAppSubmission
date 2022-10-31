@@ -6,12 +6,12 @@
     bottom: 0px;
 }
 .sessionAnswersHistoryContainer{
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 .facebookHistoryContainer{
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 .historyTitle{
     font-weight: bolder;
@@ -33,16 +33,32 @@
     color: white;
 }
 .dataRow{
-    background-color: #1dd1a1;
+    /*background-color: #1dd1a1;*/
     margin-bottom: 5px;
+    padding: 25px;
+}
+#dataRow0{
+    background-color: #00b894;
+    margin-bottom: 5px;
+    padding: 25px;
+}
+#dataRow1{
+    background-color: red;
+}
+#dataRow2{
+    background-color: #8c7ae6;
+}
+#dataRow3{
+    background-color: #40739e;
+}
+#dataRow4{
+    background-color: #44bd32;
 }
 .dataElement{
     width: 30%;
     text-align: center;
-    border-bottom: 2px solid #c8d6e5;
-    border-radius: 30px;
-    padding: 5px;
     color: white;
+    font-size: 17px;
 }
 
 .historyTable2{
@@ -83,4 +99,76 @@
     padding: 10px;
     background-color: #EA2027;
     color: white;
+}
+.recordsSelection{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #718093;
+}
+.sessionsRecordsSelectionElement{
+    width:200px;
+    padding-top: 5px;
+    margin-right: 20px;
+    background-color: #EA2027 ;
+    cursor: pointer;
+}
+#btn1NotSelected:hover,#btn2NotSelected:hover,#btn1Selected:hover,#btn2Selected:hover{
+    color: red;
+}
+.recordsSelectionText{
+    margin-top: 10px;
+    text-align: center;
+}
+#btn1NotSelected{
+    background-color: #4834d4;
+    color: white;
+    font-size: 17px;
+}
+#btn2NotSelected{
+    background-color:  #4834d4;
+    color: white;
+    font-size: 17px;
+}
+#btn1Selected{
+    background-color:white;
+    color:  #4834d4;
+    font-size: 17px;
+}
+#btn2Selected{
+    background-color: white;
+    color:  #4834d4;
+    font-size: 17px;
+}
+.depressionLevel{
+    width: 100%;
+    color:white;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: red;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+.test_page_go_home{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding-top: 10px;
+    padding-lef: 25px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+}
+.test_page_home_icon{
+    color: green;
+    font-size: 20px;
+    margin-right: 10px;
 }

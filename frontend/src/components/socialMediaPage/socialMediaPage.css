@@ -8,8 +8,7 @@
 }
 .postsTitle{
     background-color: #10ac84;
-    height: 50px;
-    border-bottom-right-radius: 800px;
+    height: 100px;
     padding: 10px;
 }
 .postsTitleText{
@@ -72,10 +71,13 @@
     grid-template-columns: 10% 35% 10% 35% 10%;
 }
 .homeButton{
-    width:100%;
+    width:70px;
+    height: 60px;
+    border-radius: 70px;
     padding-bottom: 10px;
     padding:1px;
     border: 2px solid #01a3a4;
+    padding-top: 5px;
     cursor: pointer;
     align-self: center;
     justify-self: center;
